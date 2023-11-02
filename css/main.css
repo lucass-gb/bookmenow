@@ -1,8 +1,112 @@
+/* definições de variaveis */
 :root{
     --primaria:#3e4095;
     --secundaria:#00afee;
     --laranja:#f58634;
-    --texto:#4b4b4b;
+    --texto:#2f2f2f;
     --label-categoria:#d9c505;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+/* alterando as fontes de todos os textos do body */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#cabecalho{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    max-width: 1140px;
+    /* este comando centraliza os blocos do container,porque não sei a distância de cada lado para centralizar */
+    margin:0 auto;
+}
+
+#menu ul{
+    display:flex;
+    /* list-style:none tira as bolinhas da minha lista; */
+    list-style:none;
+}
+
+#menu ul li{
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+#menu li a{
+    color: var(--texto);
+    font-weight: 500;
+}
+
+.btn-secundaria{
+    /* comando para deixar retangular (deixar bonito o texto) */
+    background-color: var(--secundaria);
+    padding: 5px 15px 5px 15px;
+    /* primero valor define o topo e o inferior,segundo valor a esquerda e a direta "padding"  */
+    /* deixando a borda do botão arrendondada "border-radius" */
+    border-radius: 5px;
+    color:#ffffff;
+}
+
+#banner{
+    background-image: url(../Img/banner.png);
+    background-repeat: no-repeat;
+    /* este comando fara que o banner no fica repetindo quando voçê da zoom na imagem */
+    background-size: cover;
+    height:300px;
+    color:#ffffff;
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+
+#banner p{
+    /* o "p" está mudando o espassamento interno do paragrafo */
+    margin:10px
+}
+
+#formPesquisa{
+    background-color: #ffffff;
+    color:var(--texto);
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+
+#formPesquisa form {
+    display:flex;
+    align-items: center;
+    
+}
+
+#formPesquisa form input{
+    height:40px;
+    font-size: 1rem;
+    border:none;
+}
+
+#formPesquisa form i {
+    height:10px;
+    font-size: 1.2rem;
+
+}
+
+#formPesquisa form button{
+    background-color:var(--primaria);
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    color:#ffffff;
+    font-size: 1rem;
+    border: none;
+}
+
